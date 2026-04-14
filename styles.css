@@ -1,0 +1,26 @@
+h1 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+h2 {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    aspect-ratio: 16 / 9;     
+  }
+  
+
+  
