@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Relationships</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(180deg, #a2dcf1 0%, #4baacc 100%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #b2eaff; 
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #0e385a;
+        }
+
+        h1 {
+            margin: 0;
+            color: #1b508a;
+            font-size: 2rem;
+        }
+
+        nav {
+            background: #a2dcf1;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #0e385a;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .intro-text {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .viz-card {
+            background: #baefff;
+            border: 1px solid #76aec3;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .about-section {
+            background: #93e2fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Exploring More Relationships</h1>
+    <h2></h2><a href="index.html">Home</a> / Explore Relationships</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="relationships.html">Explore Relationships</a>
+    <a href="state.html">Explore by State</a>
+</nav>
+
+<div class="container">
+    
+    <div class="intro-text">
+        <p>This page shows some graphs with a more in-depth look at some factors. Hover over the graphs to learn more!</p>
+    </div>
+
+    <section class="about-section">
+        <h2>Tuition, Undergraduate Enrollment, and Earnings</h2>
+        <div class="viz-card">
+          <div class='tableauPlaceholder' id='viz1778351451391' style='position: relative'><noscript><a href='#'><img alt='Enrollment Size and Tuition vs Earnings ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;BubbleChart-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;BubblePlot-UndergradEnrollment&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BubbleChart-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;BubblePlot-UndergradEnrollment' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bu&#47;BubbleChart-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;BubblePlot-UndergradEnrollment&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1778351451391');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <p>This bubble chart displays three dimensions of data: graduate earnings after ten years, the undergraduate population, and the In-State and Out-of-State Tuition. Once again, bubbles are color coded by School Type, and Size is based on the price of their tuition.</p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2>Public vs. Private Schools</h2>
+        <div class="viz-card">
+            <div class='tableauPlaceholder' id='viz1778351513137' style='position: relative'><noscript><a href='#'><img alt='Earnings from Public vs. Private Schools ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BoxPlot-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;BoxPlot-TypeofSchool&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BoxPlot-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;BoxPlot-TypeofSchool' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;BoxPlot-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;BoxPlot-TypeofSchool&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1778351513137');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                <p>The box plot below shows the distribution (as well as some interesting outliers) between public and private universities.</p>
+            </div>
+    </section>
+
+</div>
+
+<footer>
+    Raw Data can be viewed <a href="https://github.com/frishberg/Archive-of-US-News-College-Rankings/blob/main/data.xlsx">here</a> and <a href="https://collegescorecard.ed.gov/data">here</a>
+    <br>
+    By Devin Minish and Divyansh Singh. 
+    <br>
+    DATA 303 Final Project Spring 2026
+</footer>
+
+</body>
+</html>

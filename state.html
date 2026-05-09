@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore by State</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(180deg, #a2dcf1 0%, #4baacc 100%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #b2eaff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #0e385a;
+        }
+
+        h1 {
+            margin: 0;
+            color: #1b508a;
+            font-size: 2rem;
+        }
+
+        nav {
+            background: #a2dcf1;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #0e385a;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .about-section {
+            background: #93e2fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .map-container {
+            background: #93e2fa;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Median Graduate Earnings Across the States</h1>
+    <h2></h2><a href="index.html">Home</a> / Explore by State</h2>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="relationships.html">Explore Relationships</a>
+    <a href="state.html">Explore by State</a>
+</nav>
+
+<div class="container">
+    
+    <section class="about-section">
+        <h2>States in Shades: Exploring Earnings Across the US</h2>
+        <p>
+            fill out later
+        </p>
+    </section>
+
+    <div class="map-container">
+        <div class='tableauPlaceholder' id='viz1778350130635' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;Choropleth-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Choropleth-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ch&#47;Choropleth-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1778350130635');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='927px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+    </div>
+
+</div>
+
+<footer>
+    Raw Data can be viewed <a href="https://github.com/frishberg/Archive-of-US-News-College-Rankings/blob/main/data.xlsx">here</a> and <a href="https://collegescorecard.ed.gov/data">here</a>
+    <br>
+    By Devin Minish and Divyansh Singh. 
+    <br>
+    DATA 303 Final Project Spring 2026
+</footer>
+
+</body>
+</html>

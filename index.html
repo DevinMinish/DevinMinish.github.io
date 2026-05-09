@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Viz Final Project</title>
+    <title>College Characteristics and Graduate Earnings</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,7 +11,8 @@
             padding: 0;
             line-height: 1.6;
             color: #333;
-            background-color: #f9f9f9;
+            background: linear-gradient(180deg, #a2dcf1 0%, #4baacc 100%);
+            background-attachment: fixed;
         }
 
         header {
@@ -23,18 +24,19 @@
 
         h1 {
             margin: 0;
-            color: #2a69ac;
+            color: #1b508a;
             font-size: 2.2rem;
         }
 
         nav {
-            background: #fff;
+            background: #a2dcf1;
             padding: 10px;
             text-align: center;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             position: sticky;
             top: 0;
             z-index: 1000;
+            border-bottom: 2px solid #0e385a;
         }
 
         nav a {
@@ -54,16 +56,9 @@
             padding: 0 20px;
         }
 
-        .viz-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
         .viz-card {
-            background: #fff;
-            border: 1px solid #ddd;
+            background: #baefff;
+            border: 1px solid #76aec3;
             border-radius: 8px;
             padding: 15px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.05);
@@ -74,29 +69,18 @@
              height: auto;
         }
 
-        .placeholder {
-            background: #eee;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px dashed #ccc;
-            margin-bottom: 15px;
-        }
-
         .about-section {
-            background: #e2f8ff;
+            background: #93e2fa;
             padding: 25px;
             border-radius: 8px;
             margin-top: 40px;
-            border-left: 5px solid #1565c0;
         }
 
         footer {
             text-align: center;
             padding: 40px;
             font-size: 0.9rem;
-            color: #777;
+            color: s#000000;
         }
     </style>
 </head>
