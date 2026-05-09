@@ -3,50 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>THIS IS A PLACEHOLDER. Data Viz: College vs. Earnings</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Data Viz Final Project</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            background-color: #b2eaff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #0e385a;
+        }
+
+        h1 {
+            margin: 0;
+            color: #2a69ac;
+            font-size: 2.2rem;
+        }
+
+        nav {
+            background: #fff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .viz-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .viz-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .placeholder {
+            background: #eee;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #ccc;
+            margin-bottom: 15px;
+        }
+
+        .about-section {
+            background: #e2f8ff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border-left: 5px solid #1565c0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <h1>Education vs. ROI</h1>
-        <p>Analyzing College Characteristics and 10-Year Graduate Earnings</p>
-    </header>
+<header>
+    <h1>College Characteristics and Their Effects on Graduate Earnings</h1>
+</header>
 
-    <main class="container">
-        
-        <section id="intro">
-            <h2>The Project Goal</h2>
-            <p>Does the type of institution you attend significantly impact your bank account a decade later? This project explores the correlation between tuition, school size, and selectivity against median earnings.</p>
-        </section>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="relationships.html">Explore Relationships</a>
+    <a href="state.html">Explore by State</a>
+</nav>
 
-        <hr>
+<div class="container">
+    <section class="about-section">
+        <h2>Exploring Factors relating to College Prestige, Cost, and Size: How Do They Affect Graduate Salaries 10 Years Down the Line?</h2>
+        <p>
+            I will fill this out later 
+        </p>
 
-        <section class="viz-grid">
-            
-            <div class="viz-card">
-                <h3>Earnings by Institution Type</h3>
-                <div class="chart-placeholder">
-                    <p>[Interactive Scatter Plot: Tuition vs. Earnings]</p>
-                </div>
-                <p class="description">Comparing public vs. private non-profit institutions.</p>
+        <div class="viz-card">
+            <div class='tableauPlaceholder' id='viz1778348658095' style='position: relative'><noscript><a href='#'><img alt='Tooltip Viz of Each College ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HorizontalBarChart-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;TooltipVizofEachCollege&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='HorizontalBarChart-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;TooltipVizofEachCollege' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ho&#47;HorizontalBarChart-CollegeCharacteristicsvs_GraduateEarnings-FinalData303Project&#47;TooltipVizofEachCollege&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1778348658095');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            <h3>Median Graduate Earnings of the Top 200 Colleges</h3>
+            <p>This bar chart displays the median graduate earnings for each one of the Top 200 institutions in the United States. They have also been color coded by type: Public/state schools and Private, nonprofit schools. Hovering over each bar reveals the school's ranking as well as its location. We can see that schools with blue bars (representing private schools) tend to extend further out than orange bars (public schools), indicating, that private schools are, in general, more likely to produce graduates who will end up making higher salaries. However, this is only a very direct graph - deeper and more nuanced insights can be found in the other graphs.</p>
+        </div> 
+        <br>
+</section>
+
+    <section class="about-section">
+        <h2>Exploring Correlations between Factors and Earnings</h2>
+        <p>
+            More here later
+        </p>
+        <div class="viz-card">
+            <div class="placeholder">
+                <img src="Milestone2.png">
             </div>
+            <h3>Scatterplots of Ranking, Acceptance Rate, and Tuition</h3>
+            <p>These three factors are often considered most prominently when students are seeking a college to attend. [add later] </p>
+        </div> 
+    </section>
 
-            <div class="viz-card">
-                <h3>The Impact of Selectivity</h3>
-                <div class="chart-placeholder">
-                    <p>[Heatmap: Acceptance Rate vs. Salary]</p>
-                </div>
-                <p class="description">A look at whether more "exclusive" schools yield higher returns.</p>
-            </div>
+    <section class="about-section">
+        <h2>About the dataset</h2>
+        <p>
+            U.S. College Scorecard and US News College Rankings 
+        </p>
+    </section>
 
-        </section>
+</div>
 
-    </main>
-
-    <footer>
-        <p>Data Source: College Scorecard API | Created for Final Project 2026</p>
-    </footer>
+<footer>
+    Raw Data can be viewed <a href="https://github.com/frishberg/Archive-of-US-News-College-Rankings/blob/main/data.xlsx">here</a> and <a href="https://collegescorecard.ed.gov/data">here</a>
+    <br>
+    By Devin Minish and Divyansh Singh. 
+    <br>
+    DATA 303 Final Project Spring 2026
+</footer>
 
 </body>
 </html>
