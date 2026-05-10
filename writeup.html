@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Report Writeup</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8; /* Increased line height for readability */
+            color: #333;
+            background: linear-gradient(180deg, #a2dcf1 0%, #4baacc 100%);
+            background-attachment: fixed;
+        }
+
+        header {
+            background-color: #b2eaff;
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #0e385a;
+        }
+
+        h1 {
+            margin: 0;
+            color: #1b508a;
+            font-size: 2rem;
+        }
+
+        nav {
+            background: #a2dcf1;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #1565c0;
+            font-weight: bold;
+        }
+        
+        .intro-text {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px; 
+            margin: 40px auto;
+            padding: 40px;
+            background: #93e2fa;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .report-section {
+            margin-bottom: 30px;
+        }
+
+        .report-section h2 {
+            color: #000000;
+            font-size: 1.5rem;
+            border-bottom: 1px solid #102d42;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.9rem;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Full Report Writeup</h1>
+    <a href="index.html">Home</a> / Full Report
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="relationships.html">Explore Relationships</a>
+    <a href="state.html">Explore by State</a>
+    <a href="writeup.html">Full Report</a>
+</nav>
+
+<div class="intro-text">
+    <p>This page contains the full written report and findings for this project.</p>
+</div>
+
+<div class="container">
+    
+    <div class="report-section">
+        <h2>Introduction</h2>
+        <p>For many students, choosing a college is one of the biggest financial and personal decisions they will ever make. Tuition prices continue to rise, student debt remains a major issue, and families increasingly want to know whether attending a certain school will lead to stronger financial outcomes after graduation. At the same time, colleges vary significantly in ranking, tuition, size, acceptance rate, and overall prestige. Because of this, we wanted to explore a question that many students already think about during the college search process: how strongly do college characteristics relate to graduate earnings?
+            <br><br>
+            Our project focuses on the relationship between institutional characteristics and salary outcomes for graduates across colleges in the United States. Specifically, we examined how factors such as college ranking, tuition costs, enrollment size, and acceptance rates relate to median graduate earnings several years after students leave school. Rather than looking at only one factor in isolation, we wanted to compare multiple institutional characteristics together and determine whether certain trends consistently appeared throughout the data.
+            <br><br>
+            This topic felt especially relevant to us as college students because these are the same types of questions we hear constantly from students, parents, and counselors. Many people assume that a higher-ranked or more expensive college will automatically produce higher salaries, but we wanted to see whether the data actually supports those assumptions. We also wanted to create a project that was visually interactive and easy to understand for users without a technical background.
+            <br><br>
+            Our final project combines data cleaning, exploratory analysis, and interactive visualizations to better understand the connection between higher education characteristics and financial outcomes after graduation. The goal was not simply to create charts, but to create a professional and informative data story that allows users to interact with the data and form their own conclusions.</p>
+            
+    </div>
+
+    <div class="report-section">
+        <h2>Research Questions and Goals</h2>
+        <p>The central research question for our project was:
+            <br>
+            <strong><i>“How do college characteristics such as ranking, tuition, enrollment size, and acceptance rate relate to graduate salary outcomes?”</i></strong>
+            <br><br>
+            From this main question, we developed several smaller goals:
+            <ul>
+                <li>Determine whether higher-ranked schools generally produce higher graduate earnings.</li>
+                <li>Explore whether more expensive colleges are associated with stronger salary outcomes.</li>
+                <li>Analyze how the acceptance rate relates to median earnings.</li>
+                <li>Examine whether larger universities differ significantly from smaller institutions in terms of graduate salaries.</li>
+                <li>Build an interactive website that allows users to explore these relationships visually.</li>
+            </ul>
+            One of our biggest goals was accessibility. We wanted the project to be understandable to someone without a strong background in statistics or data science. Instead of overwhelming users with technical language, we focused on creating clear visualizations and concise written explanations that communicate the main findings effectively.
+            <br><br>
+            Another important goal was professionalism. Throughout the semester, we learned that good visualizations are not only about presenting data, but also about presentation quality, readability, organization, and user experience. We tried to design our website so that it felt polished, modern, and interactive rather than looking like a simple collection of classroom graphs.</p>            
+    </div>
+
+    <div class="report-section">
+        <h2>Data Sources</h2>
+        <p>
+            Our project primarily used data from the U.S. College Scorecard dataset along with ranking information collected from external ranking datasets. The College Scorecard dataset contains detailed information about colleges in the United States, including tuition, enrollment, acceptance rate, and post-graduation earnings.
+            <br><br>
+            Some of the main variables used in our project included:
+            <ul>
+            <li>Median earnings after graduation</li>
+            <li>In-state tuition</li>
+            <li>Out-of-state tuition</li>
+            <li>Undergraduate enrollment size</li>
+            <li>Acceptance rate</li>
+            <li>Institutional ranking</li>
+            <li>School name and location</li>
+            </ul>
+            One challenge during the project was combining information from multiple datasets. Different datasets often used slightly different school names, which created matching issues during the merging process. For example, some schools used abbreviations while others used full names. Cleaning and standardizing the data became an important step before visualization could begin.
+            <br><br>
+            We also removed missing or incomplete observations when necessary to avoid misleading conclusions. This was especially important for variables such as rankings and salary outcomes because incomplete rows could distort trends shown in the visualizations.
+
+        </p>
+    </div>
+
+    <div class="report-section">
+        <h2>Data Cleaning and Preparation</h2>
+        <p>
+            A significant portion of the project involved cleaning and organizing the data before any visualizations were created. Although data visualizations often appear simple on the surface, we learned that preparing the data properly is one of the most time-consuming parts of the process.
+            <br><br>
+            We used Python and Jupyter Notebook to clean and process the datasets. Pandas was used heavily for filtering, renaming columns, merging datasets, and handling missing values. We also standardized naming conventions between datasets so that schools could merge correctly.
+            <br><br>
+            One issue we encountered involved ranking data across different years. Some schools had rankings available only for certain years, while others had multiple ranking values across time. To solve this, we created a “most recent rank” variable that prioritized the newest available ranking for each school.
+            <br><br>
+            We also had to decide which variables were most useful for our analysis. Initially, we considered including many additional variables, but eventually narrowed the project to variables that were both meaningful and visually interpretable. This helped keep the project focused and prevented the visualizations from becoming cluttered.
+            <br><br>
+            After cleaning, the final dataset allowed us to compare schools consistently across multiple institutional characteristics and earnings measures.
+        </p>
+    </div>
+
+    <div class="report-section">
+        <h2>Visualization Design and Website Development</h2>
+        <p>
+            An important part of our project was not only creating visualizations, but also presenting them in a way that felt interactive and engaging. Instead of submitting static charts alone, we built a website that organized our findings into a cleaner and more professional format.
+            <br><br>
+            When designing the visualizations, we focused heavily on readability and avoiding misleading representations. We selected graph types that matched the data appropriately and allowed patterns to become visually clear.
+            <br>
+            For example:
+            <ul>
+                <li>Scatterplots were used to examine relationships between rankings, tuition, and earnings.</li>
+                <li>Interactive hover features allowed users to identify individual schools.</li>
+                <li>Color and sizing choices were intentionally kept clean and consistent to reduce unnecessary visual clutter.</li>
+                <li>Layout spacing and formatting were adjusted carefully so the website remained readable and organized.</li>
+            </ul>
+            One of the strongest parts of the project was the interactive nature of the website itself. Rather than simply describing conclusions in text, users can directly explore the data and identify patterns themselves. This creates a more engaging experience and aligns well with the purpose of data visualization.
+            <br><br>
+            We also spent considerable time refining the visual appearance of the website. Early versions of the project looked much more basic, but through multiple revisions, we improved the layout, spacing, labeling, and overall presentation quality. We wanted the final product to look like a professional portfolio-quality project rather than a rough classroom assignment.
+        </p>
+    </div>
+
+    <div class="report-section">
+        <h2>Findings and Analysis</h2>
+        <h3>Relationship Between College Rank and Earnings</h3>
+        <p>
+            One of the clearest trends in our project was the relationship between institutional ranking and graduate earnings. Higher-ranked schools generally tended to produce higher median earnings after graduation.
+            <br><br>
+            However, the relationship was not perfectly linear. While elite institutions often appeared near the top of the salary distributions, there were also many mid-ranked schools with strong salary outcomes. This suggests that ranking alone does not completely determine graduate success.
+            <br><br>
+            The visualization also showed clusters of schools with similar rankings but significantly different earnings outcomes. This was one of the more interesting findings because it demonstrates that students should not rely exclusively on rankings when evaluating colleges.
+            <br><br>
+            In many cases, specialized institutions or schools with strong STEM and business programs appeared to outperform schools with similar overall rankings. This highlights how program focus and career pathways may influence earnings beyond institutional prestige alone.
+            <br><br>
+        </p>
+
+        <h3>Tuition and Salary Outcomes</h3>
+        <p>
+            Another major area of analysis involved tuition costs and graduate earnings. Initially, we expected that more expensive colleges would consistently produce higher salaries. The data partially supported this idea, but the relationship was more complicated than expected.
+            <br><br>
+            Many high-tuition schools did show strong earnings outcomes, especially private universities and highly selective institutions. However, the data also revealed substantial overlap between expensive and lower-cost schools.
+            <br><br>
+            Some public universities demonstrated relatively high graduate earnings despite lower tuition levels. This finding was particularly important because it suggests that strong financial outcomes are not limited exclusively to the most expensive institutions.
+            <br><br>
+            This visualization also raised questions about return on investment. A school with slightly lower earnings outcomes may still provide better overall value if tuition costs are dramatically lower. Although our project did not calculate full return-on-investment metrics, the visualizations clearly showed that tuition alone is not enough to predict future salary outcomes.
+        </p>
+
+        <h3>Acceptance Rate and Earnings</h3>
+        <p>
+            Acceptance rate also showed an interesting relationship with graduate salaries. Schools with lower acceptance rates generally tended to produce higher earnings outcomes, which aligns with the idea that more selective institutions often have stronger reputations and resources.
+            <br><br>
+            At the same time, there were important exceptions. Some schools with moderate or even relatively high acceptance rates still showed strong earnings outcomes. This suggests that selectivity is correlated with salary outcomes, but not entirely deterministic.
+            <br><br>
+            One interesting pattern was the large spread of salaries among schools with middle-range acceptance rates. This indicates that factors beyond selectivity, such as academic specialization, geographic location, internship opportunities, and alumni networks, may play major roles in shaping graduate success.
+        </p>
+
+        <h3>Enrollment Size and Institutional Differences</h3>
+        <p>
+            The relationship between enrollment size and earnings was less direct than some of the other variables. Larger universities did not automatically produce higher or lower salaries.
+            <br><br>
+            Instead, the visualization suggested that institutional size alone is not a strong predictor of graduate earnings. Some very large public universities showed excellent salary outcomes, while some smaller schools also performed extremely well.
+            <br><br>
+            This finding reinforced one of the major themes of our project: no single variable fully explains graduate earnings outcomes. College success is shaped by a combination of institutional characteristics rather than one defining factor.
+        </p>
+
+        <h3>Interpretation and Broader Insights</h3>
+        <p>
+            One of the biggest takeaways from our project is that college outcomes are far more complex than simple rankings or prestige labels. While higher-ranked and more selective schools often perform well financially, the data consistently showed overlap between different categories of institutions.
+            <br><br>
+            This is important because many students assume there is a single “best” path toward financial success after graduation. Our analysis suggests that the reality is much more nuanced. Students should consider multiple factors, including cost, academic programs, career goals, geographic location, and long-term financial value.
+            <br><br>
+            Another important insight is that data visualization itself can make complicated information much easier to understand. Tables of numbers alone would not communicate these trends nearly as effectively. Through interactive visualizations, users can quickly identify patterns, outliers, and relationships that would otherwise be difficult to recognize.
+            <br><br>
+            The project also demonstrated how visualization design choices affect interpretation. Careful choices involving scale, labeling, color, and layout helped ensure that the data remained readable and accurate without becoming visually overwhelming.
+        </p>
+
+        <h3>Challenges and Limitations</h3>
+        <p>
+            Although the final project turned out successfully, we faced several challenges throughout the process.
+            <br><br>
+            The largest challenge involved data preparation and merging datasets from multiple sources. School naming inconsistencies created matching issues that required significant cleaning and manual adjustments.
+            <br><br>
+            Another challenge was deciding how much information to include. We initially explored a larger number of variables, but eventually realized that too many variables made the visualizations difficult to interpret. Narrowing the project focus improved the clarity of the final product.
+            <br><br>
+            We also encountered technical challenges while building the website itself. Formatting visualizations, improving responsiveness, and organizing the layout required multiple revisions before the final design felt polished.
+            <br><br>
+            There are also limitations to the project. Median earnings alone cannot fully measure the value of a college education. Salary outcomes are influenced by many external factors, including major choice, geographic region, economic conditions, and personal career decisions.
+            <br><br>
+            Additionally, institutional ranking systems themselves are imperfect and subjective in some ways. Because of this, the project should not be interpreted as a definitive ranking of schools, but rather as an exploration of relationships between institutional characteristics and financial outcomes.
+        </p>
+    </div>
+
+    <div class="report-section">
+        <h2>References</h2>
+        <p>U.S. Department of Education. College Scorecard Data. <a href="https://collegescorecard.ed.gov/data/">https://collegescorecard.ed.gov/data/</a>.
+            <br><br>
+            Ranking datasets and institutional information collected from U.S. News.
+            <br><br>
+            Python Libraries Used:
+            <ul>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Matplotlib</li>
+            </ul>
+            Tableau was used for interactive visualizations.
+            </p>
+    </div>
+</div>
+
+<footer>
+    Raw Data can be viewed <a href="https://github.com/frishberg/Archive-of-US-News-College-Rankings/blob/main/data.xlsx">here</a> and <a href="https://collegescorecard.ed.gov/data">here</a>
+    <br>
+    By Devin Minish and Divyansh Singh. 
+    <br>
+    DATA 303 Final Project Spring 2026
+</footer>
+
+</body>
+</html>
